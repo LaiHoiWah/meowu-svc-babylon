@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>svc-xfile</artifactId>
+    <artifactId>svc-babylon</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>meowu-svc-xfile</name>
+    <name>meowu-svc-babylon</name>
 
     <parent>
         <groupId>com.meowu</groupId>
@@ -69,7 +69,7 @@
 
         <dependency>
             <groupId>com.meowu</groupId>
-            <artifactId>svc-account-client</artifactId>
+            <artifactId>svc-lilith-client</artifactId>
         </dependency>
 
         <!-- test -->
