@@ -24,14 +24,14 @@ public class ExceptionAdviceHandler{
     }
 
     @ExceptionHandler(value = BusinessException.class)
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public Response<?> businessException(RuntimeException e){
         log.error(e.getMessage(), e);
         return new Response<>(ResponseCode.FAILURE, e.getMessage());
     }
 
     @ExceptionHandler(value = IllegalArgumentException.class)
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public Response<?> illegalArgumentException(IllegalArgumentException e){
         log.error(e.getMessage(), e);
         return new Response<>(ResponseCode.FAILURE, e.getMessage());

@@ -50,6 +50,10 @@ public class ResourceInfoUtils{
         "odt", "ods", "odp", "odg"
     );
 
+    private ResourceInfoUtils(){
+        throw new IllegalStateException("Instantiation is not allowed");
+    }
+
     public static Metadata getMetadata(String path){
         if(StringUtils.isBlank(path)){
             throw new MediaInfoException("MediaInfoUtils: PATH must not be null");
